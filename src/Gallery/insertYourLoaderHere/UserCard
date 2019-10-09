@@ -1,0 +1,30 @@
+import React from "react"
+import ContentLoader from "react-content-loader"
+
+const UserCard = props => {
+  return (
+  <ContentLoader 
+    height={160}
+    width={600}
+    speed={2}
+    primaryColor="#f3f3f3"
+    secondaryColor="#ecebeb"
+  >
+    <rect x="10" y="10" rx="0" ry="0" width="83" height="82" /> 
+    <rect x="110" y="10" rx="0" ry="0" width="160" height="23" /> 
+    <rect x="110" y="45" rx="0" ry="0" width="160" height="9" /> 
+    <circle cx="150" cy="80" r="12" /> 
+    <circle cx="190" cy="80" r="12" /> 
+    <circle cx="230" cy="80" r="12" />
+  </ContentLoader>
+  )
+}
+
+UserCard.metadata = {
+  name: Aditi, // My name
+  github: adititipnis, // Github username
+  description: User Card, // Little tagline
+  filename: UserCard // filename of your loader
+}
+
+export default UserCard
